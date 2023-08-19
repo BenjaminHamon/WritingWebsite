@@ -1,0 +1,49 @@
+{% import 'macros.html' as shared_macros -%}
+
+<!doctype html>
+<html>
+
+    <head>
+        <title>{{ config['WEBSITE_TITLE'] }}</title>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'layout.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'content.css') }}"/>
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+				{{ shared_macros.navigation_link('application.home', 'Home', [ 'application.home' ]) }}
+            </nav>
+        </header>
+
+        <main>
+
+            {% block content %}{% endblock %}
+
+        </main>
+
+        <footer>
+            <div>
+                <p>Writing and Benjamin Hamon</p>
+            </div>
+            <div>
+                <p>Sources: https://github.com/BenjaminHamon/WritingWebsite/</p>
+                <p>Contact: development@benjaminhamon.com</p>
+            </div>
+            <div>
+                {% if config['WEBSITE_VERSION'] %}
+                <p>Version {{ config['WEBSITE_VERSION'] }} ({{ config['WEBSITE_DATE'] }})</p>
+                <p>{{ config['WEBSITE_COPYRIGHT'].replace("(c)", "©") }}</p>
+                {% else %}
+                <p>Development Version</p>
+                {% endif %}
+            </div>
+        </footer>
+
+    </body>
+
+    {% block scripts %}{% endblock %}
+
+</html>

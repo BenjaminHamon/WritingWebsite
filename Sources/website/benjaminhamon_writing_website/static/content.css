@@ -1,0 +1,70 @@
+main > section
+{
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	gap: 1em;
+}
+
+main > section > article
+{
+	box-shadow: 0 0 5px #999999;
+	background-color: #fff;
+}
+
+/* Home */
+
+.home-heading
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1em;
+	gap: 1em;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+
+.home-heading > p > span
+{
+	display: inline-block;
+}
+
+.home-link
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1em;
+}
+
+.home-link > a
+{
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+}
+
+.home-link > a > .link-heading
+{
+	margin-bottom: 0.25em;
+	font-size: 2em;
+	text-align: center;
+}
+
+.home-link > a > .link-description
+{
+	font-size: 1em;
+	text-align: center;
+}
+
+
+/* Error */
+
+.error-message
+{
+	padding: 1em;
+	font-weight: bold;
+	text-align: center;
+}
