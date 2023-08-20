@@ -1,0 +1,103 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<section>
+    <article id="the-maze-of-your-mind-book-1" class="book-entry">
+        <div class="title">
+            <p class="book-title"><span>The Maze Of Your Mind,</span> <span>Book 1</span></p>
+        </div>
+        <div class="credits">
+            <p class="book-author"><span>Author:</span> Benjamin Hamon</span></p>
+            <p class="book-publisher"><span>Publishing:</span> <span>EI Benjamin Hamon</span></p>
+            <p class="book-publisher"><span>Cover design:</span> <span>Natalia Junqueira</span></p>
+            <p class="book-publisher"><span>Editorial assessment:</span> <span>Sydney W</span></p>
+            <p class="book-publisher"><span>Developmental and line edits:</span> <span>Kate Studer</span></p>
+            <p class="book-publisher"><span>Proofreading:</span> <span>Taryn Ortolan</span></p>
+        </div>
+        <div class="extra">
+            <p class="book-identifier">TBD</p>
+            <p class="book-release-date">Release on 2-October-2023</p>
+        </div>
+        <div class="tags">
+			<ul>
+                <li class="information">Contemporary romance</li>
+                <li class="information">Queer romance</li>
+                <li class="information">Women loving women</li>
+            </ul>
+            <ul>
+                <li class="warning">Adult themes</li>
+                <li class="warning">Mental health troubles</li>
+                <li class="warning">Some explicit sexual content</li>
+			</ul>
+        </div>
+        <div class="cover">
+            <a href="{{ url_for('static', filename = 'images/the_maze_of_your_mind_book_1.jpeg') }}">
+		        <img src="{{ url_for('static', filename = 'images/the_maze_of_your_mind_book_1.jpeg') }}"/>
+            </a>
+        </div>
+		<div class="blurb">
+            <p>It’s been years since Kate and Sara called themselves best friends. Life has happened and they’ve drifted away from each other. Sara’s become an adult, discovered new things about herself, experienced love. She’s decided she’s going to make her own happiness and build herself the perfect love story, except she’s as shy as ever, hopelessly stuck in the daily routine, and not quite confident enough to put herself out there.</p>
+            <p>During one fateful winter, Sara reunites with Kate, and their bond is reborn as if the time apart had never happened. Sara’s happy once again, and her affection quickly grows beyond simple friendship, so much so that she starts decisively involving herself in Kate’s life.</p>
+            <p>However, dealing with Kate might be more complicated than Sara imagined. Saying “I love you” can be hard, even for best friends.</p>
+		</div>
+        <div class="links">
+            <a href="#">Buy on Amazon</a>
+            <a href="#">Buy on Google Play</a>
+            <a href="#">Buy on Kobo</a>
+        </div>
+    </article>
+</section>
+
+<section>
+    <article id="the-maze-of-your-mind-book-2" class="book-entry">
+        <div class="title">
+            <p class="book-title">The Maze Of Your Mind, Book 2</p>
+        </div>
+        <div class="credits">
+            <p class="book-author">Author: Benjamin Hamon</p>
+            <p class="book-publisher">Publishing: EI Benjamin Hamon</p>
+        </div>
+        <div class="extra">
+            <p class="book-identifier">TBD</p>
+            <p class="book-release-date">Release TBD</p>
+        </div>
+        <div class="tags">
+			<ul>
+                <li class="information">Contemporary romance</li>
+                <li class="information">Queer romance</li>
+                <li class="information">Women loving women</li>
+            </ul>
+            <ul>
+                <li class="warning">Adult themes</li>
+                <li class="warning">Mental health troubles</li>
+                <li class="warning">Some explicit sexual content</li>
+			</ul>
+        </div>
+    </article>
+</section>
+
+<section>
+    <article id="half-a-life" class="book-entry">
+        <div class="title">
+            <p class="book-title">Half A Life</p>
+        </div>
+        <div class="credits">
+            <p class="book-author">Author: Benjamin Hamon</p>
+            <p class="book-publisher">Publishing: EI Benjamin Hamon</p>
+        </div>
+        <div class="extra">
+            <p class="book-identifier">TBD</p>
+            <p class="book-release-date">Release TBD</p>
+        </div>
+        <div class="tags">
+			<ul>
+                <li class="information">Contemporary drama and romance</li>
+                <li class="information">Queer romance</li>
+                <li class="information">Women loving women</li>
+            </ul>
+        </div>
+    </article>
+</section>
+
+{% endblock %}

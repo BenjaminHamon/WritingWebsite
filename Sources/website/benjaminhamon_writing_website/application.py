@@ -38,7 +38,3 @@ class Application:
             flask.request.environ["REMOTE_ADDR"], flask.request.method, flask.request.base_url, status_code, exc_info = True)
 
         return flask.render_template("error.html", title = "Error", message = status_message, status_code = status_code), status_code
-
-
-    def home(self) -> str:
-        return flask.render_template("home.html")

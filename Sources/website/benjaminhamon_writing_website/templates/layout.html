@@ -4,17 +4,24 @@
 <html>
 
     <head>
-        <title>{{ config['WEBSITE_TITLE'] }}</title>
+        <title>{{ title }} - {{ config['WEBSITE_TITLE'] }}</title>
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="{{ url_for('static', filename = 'layout.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'generic.css') }}"/>
         <link rel="stylesheet" href="{{ url_for('static', filename = 'content.css') }}"/>
     </head>
 
     <body>
 
         <header>
+            <div class="title">
+                <a href="{{ url_for('main_controller.home') }}"><p>Benjamin Hamon</p></a>
+            </div>
             <nav>
-				{{ shared_macros.navigation_link('application.home', 'Home', [ 'application.home' ]) }}
+				{{ shared_macros.navigation_link('main_controller.home', 'Home', [ 'main_controller.home' ]) }}
+				{{ shared_macros.navigation_link('main_controller.books', 'Books', [ 'main_controller.books' ]) }}
+				{{ shared_macros.navigation_link('main_controller.about', 'About', [ 'main_controller.about' ]) }}
+				{{ shared_macros.navigation_link('main_controller.contact', 'Contact', [ 'main_controller.contact' ]) }}
             </nav>
         </header>
 
@@ -26,11 +33,12 @@
 
         <footer>
             <div>
-                <p>Writing and Benjamin Hamon</p>
+                <p>{{ config['WEBSITE_TITLE'] }}</p>
             </div>
             <div>
-                <p>Sources: https://github.com/BenjaminHamon/WritingWebsite/</p>
-                <p>Contact: development@benjaminhamon.com</p>
+                <a href="https://www.benjaminhamon.com">Portal</a>
+                <a href="https://github.com/BenjaminHamon/WritingWebsite/">Sources</a>
+                <a href="mailto:development@benjaminhamon.com">Contact</a>
             </div>
             <div>
                 {% if config['WEBSITE_VERSION'] %}

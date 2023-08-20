@@ -7,6 +7,7 @@ import werkzeug.exceptions
 
 import benjaminhamon_writing_website
 from benjaminhamon_writing_website.application import Application
+from benjaminhamon_writing_website.main_controller import MainController
 
 
 main_logger = logging.getLogger("Website")
@@ -16,10 +17,11 @@ request_logger = logging.getLogger("Request")
 def create_application() -> Application:
     flask_application = flask.Flask("benjaminhamon_writing_website")
     application = Application(flask_application)
+    main_controller = MainController()
 
-    configure(flask_application, "Writing and Benjamin Hamon")
+    configure(flask_application, "Benjamin Hamon's website about writing")
     register_handlers(flask_application, application)
-    register_routes(flask_application, application)
+    register_routes(flask_application, main_controller)
 
     return application
 
@@ -44,8 +46,12 @@ def register_handlers(flask_application: flask.Flask, application: Application) 
         flask_application.register_error_handler(exception, application.handle_error)
 
 
-def register_routes(flask_application: flask.Flask, application: Application) -> None:
-    add_url_rule(flask_application, "/", [ "GET" ], application.home)
+def register_routes(flask_application: flask.Flask, main_controller: MainController) -> None:
+    add_url_rule(flask_application, "/", [ "GET" ], main_controller.home)
+    add_url_rule(flask_application, "/About", [ "GET" ], main_controller.about)
+    add_url_rule(flask_application, "/Books", [ "GET" ], main_controller.books)
+    add_url_rule(flask_application, "/Contact", [ "GET" ], main_controller.contact)
+
 
 
 def add_url_rule(application: flask.Flask, path: str, methods: List[str], handler: Callable, **kwargs) -> None:
