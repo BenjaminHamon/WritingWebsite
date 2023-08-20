@@ -152,12 +152,12 @@
 
 /* Contact */
 
-.contact-entry > div.email
+.contact-entry > div.link
 {
 	text-align: center;
 }
 
-.contact-entry > div.email > a
+.contact-entry > div.link > a
 {
 	text-decoration: none;
 }
