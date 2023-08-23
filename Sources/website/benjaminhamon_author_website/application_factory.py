@@ -5,9 +5,9 @@ import flask
 import jinja2
 import werkzeug.exceptions
 
-import benjaminhamon_writing_website
-from benjaminhamon_writing_website.application import Application
-from benjaminhamon_writing_website.main_controller import MainController
+import benjaminhamon_author_website
+from benjaminhamon_author_website.application import Application
+from benjaminhamon_author_website.main_controller import MainController
 
 
 main_logger = logging.getLogger("Website")
@@ -15,11 +15,13 @@ request_logger = logging.getLogger("Request")
 
 
 def create_application() -> Application:
-    flask_application = flask.Flask("benjaminhamon_writing_website")
+    title = "Benjamin Hamon's author website"
+
+    flask_application = flask.Flask("benjaminhamon_author_website")
     application = Application(flask_application)
     main_controller = MainController()
 
-    configure(flask_application, "Benjamin Hamon's website about writing")
+    configure(flask_application, title)
     register_handlers(flask_application, application)
     register_routes(flask_application, main_controller)
 
@@ -28,9 +30,9 @@ def create_application() -> Application:
 
 def configure(application: flask.Flask, title: str) -> None:
     application.config["WEBSITE_TITLE"] = title
-    application.config["WEBSITE_COPYRIGHT"] = benjaminhamon_writing_website.__copyright__
-    application.config["WEBSITE_VERSION"] = benjaminhamon_writing_website.__version__
-    application.config["WEBSITE_DATE"] = benjaminhamon_writing_website.__date__
+    application.config["WEBSITE_COPYRIGHT"] = benjaminhamon_author_website.__copyright__
+    application.config["WEBSITE_VERSION"] = benjaminhamon_author_website.__version__
+    application.config["WEBSITE_DATE"] = benjaminhamon_author_website.__date__
 
     application.jinja_env.undefined = jinja2.StrictUndefined
     application.jinja_env.trim_blocks = True

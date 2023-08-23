@@ -1,9 +1,9 @@
 {
-	"ProjectIdentifier": "WritingWebsite",
-	"ProjectDisplayName": "Writing Website",
+	"ProjectIdentifier": "AuthorWebsite",
+	"ProjectDisplayName": "Author Website",
 	"ProjectVersionIdentifier": "1.0.0",
 	"Copyright": "Copyright (c) 2023 Benjamin Hamon",
 	"Author": "Benjamin Hamon",
 	"AuthorEmail": "development@benjaminhamon.com",
-	"ProjectUrl": "https://github.com/BenjaminHamon/WritingWebsite"
+	"ProjectUrl": "https://github.com/BenjaminHamon/AuthorWebsite"
 }

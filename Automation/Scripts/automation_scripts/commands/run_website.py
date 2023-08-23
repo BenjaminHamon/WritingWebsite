@@ -28,7 +28,7 @@ class RunWebsiteCommand(AutomationCommand):
 
         logging.getLogger("werkzeug").setLevel(logging.WARNING)
 
-        application_module = importlib.import_module("benjaminhamon_writing_website.application_factory")
+        application_module = importlib.import_module("benjaminhamon_author_website.application_factory")
         application = application_module.create_application()
         website_link = "http://%s:%s/" % (address, port)
 

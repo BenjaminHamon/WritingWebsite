@@ -15,13 +15,13 @@ def run_setup() -> None:
     project_configuration = automation_helpers.load_project_configuration(workspace_directory)
 
     setuptools.setup(
-		name = "benjaminhamon-writing-website",
+		name = "benjaminhamon-author-website",
 		description = "Website for www.benjaminhamon.com",
         version = project_configuration["ProjectVersionFull"],
         author = project_configuration["Author"],
         author_email = project_configuration["AuthorEmail"],
         url = project_configuration["ProjectUrl"],
-        packages = setuptools.find_packages(include = [ "benjaminhamon_writing_website", "benjaminhamon_writing_website.*" ]),
+        packages = setuptools.find_packages(include = [ "benjaminhamon_author_website", "benjaminhamon_author_website.*" ]),
         python_requires = "~= 3.9",
 
         install_requires = [

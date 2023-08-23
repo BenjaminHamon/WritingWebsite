@@ -4,7 +4,7 @@ from typing import Any, Callable, Optional, Tuple
 import flask
 import werkzeug.exceptions
 
-from benjaminhamon_writing_website import web_helpers
+from benjaminhamon_author_website import web_helpers
 
 
 main_logger = logging.getLogger("Application")

@@ -1,6 +1,6 @@
 """ Unit tests for application_factory """
 
-from benjaminhamon_writing_website import application_factory
+from benjaminhamon_author_website import application_factory
 
 
 def test_create_application():

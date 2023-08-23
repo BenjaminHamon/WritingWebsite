@@ -48,7 +48,7 @@ class ProjectConfiguration:
     def list_python_packages(self) -> List[PythonPackage]:
         return [
             PythonPackage(
-                identifier = "benjaminhamon-writing-website",
+                identifier = "benjaminhamon-author-website",
                 path_to_sources = os.path.join("Sources", "website"),
                 path_to_tests = os.path.join("Tests", "website")),
         ]
