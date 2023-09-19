@@ -1,14 +1,16 @@
 /* Home */
 
-.news-entry > .image
+.news-entry > .text
 {
-	align-self: center;
+	display: block;
 }
 
-.news-entry > .image img
+.news-entry > .text img
 {
-	max-width: 250px;
-	max-height: 250px;
+	float: right;
+	margin-left: 1em;
+	max-width: min(160px, 25%);
+	max-height: 256px;
 }
 
 
@@ -18,7 +20,7 @@
 .book-entry
 {
 	display: grid;
-	grid-template-columns: 1fr auto;
+	grid-template-columns: 1fr min(160px, 25%);
 }
 
 .book-entry > .title { grid-area: 1 / 1; }
@@ -28,17 +30,6 @@
 .book-entry > .tags { grid-area: 4 / 1 / 5 / 3; }
 .book-entry > .blurb { grid-area: 5 / 1 / 6 / 3; }
 .book-entry > .links { grid-area: 6 / 1 / 7 / 3; }
-
-@media (max-width: 800px)
-{
-	.book-entry > .title { grid-area: 1 / 1; }
-	.book-entry > .credits { grid-area: 2 / 1; }
-	.book-entry > .cover { grid-area: 1 / 2 / 4 / 3; }
-	.book-entry > .extra { grid-area: 3 / 1 / 4 / 3; }
-	.book-entry > .tags { grid-area: 4 / 1  / 5 / 3; }
-	.book-entry > .blurb { grid-area: 5 / 1 / 5 / 3; }
-	.book-entry > .links { grid-area: 6 / 1 / 6 / 3; }
-}
 
 .book-entry > .title
 {
@@ -110,17 +101,8 @@
 
 .book-entry > .cover img
 {
-	max-width: 160px;
-	max-height: 256px;
-}
-
-@media (max-width: 800px)
-{
-	.book-entry > .cover img
-	{
-		max-width: 80px;
-		max-height: 128px;
-	}
+	max-width: min(160px, 100%);
+	max-height: min(256px, 100%);
 }
 
 .book-entry > .blurb
@@ -172,7 +154,7 @@
 	float: right;
 	margin: 2em;
 	margin-right: 0;
-	max-width: 200px;
+	max-width: min(200px, 25%);
 	max-height: 200px;
 }
 
