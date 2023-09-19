@@ -160,6 +160,23 @@
 
 
 
+/* About */
+
+.about-entry > .text
+{
+	display: block;
+}
+
+.about-entry > .text > img
+{
+	float: right;
+	margin: 2em;
+	margin-right: 0;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+
 /* Contact */
 
 .contact-entry > div.link
