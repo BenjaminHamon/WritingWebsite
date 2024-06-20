@@ -1,3 +1,5 @@
+<!-- cspell:words werkzeug -->
+
 This project is open source software. The source code is available on [GitHub](https://github.com/BenjaminHamon/AuthorWebsite), under the [MIT license](https://github.com/BenjaminHamon/AuthorWebsite/blob/develop/license.txt).
 
 AuthorWebsite uses licensed software from:
