@@ -28,8 +28,9 @@
 .book-entry > .extra { grid-area: 3 / 1; }
 .book-entry > .cover { grid-area: 1 / 2 / 5 / 3; }
 .book-entry > .tags { grid-area: 4 / 1 / 5 / 3; }
-.book-entry > .blurb { grid-area: 5 / 1 / 6 / 3; }
-.book-entry > .links { grid-area: 6 / 1 / 7 / 3; }
+.book-entry > .description { grid-area: 5 / 1 / 6 / 3; }
+.book-entry > .blurb { grid-area: 6 / 1 / 7 / 3; }
+.book-entry > .links { grid-area: 7 / 1 / 8 / 3; }
 
 .book-entry > .title
 {
@@ -105,19 +106,82 @@
 	max-height: min(256px, 100%);
 }
 
-.book-entry > .blurb
+.book-entry > .description
 {
+	background-color: #f0f0f0;
+	padding: 0 0.4em;
+	border-radius: 4px;
+}
+
+.book-entry > .description > details > summary
+{
+	cursor: pointer;
+	list-style: none;
+	color: #0000ee;
+}
+
+.book-entry > .description > details > div
+{
+	margin-top: 1em;
 	display: flex;
 	flex-direction: column;
 	gap: 0.5em;
 }
 
-.book-entry > .blurb > p
+.book-entry > .description > details > div > p
 {
-	font-style: italic;
 	line-height: 1.5em;
 	text-align: justify;
 	text-indent: 1em;
+}
+
+.book-entry > .description > details > div > p.emphasis-bold
+{
+	font-weight: bold;
+}
+
+.book-entry > .description > details > div > p.emphasis-italic
+{
+	font-style: italic;
+}
+
+.book-entry > .blurb
+{
+	background-color: #f0f0f0;
+	padding: 0 0.4em;
+	border-radius: 4px;
+}
+
+.book-entry > .blurb > details > summary
+{
+	cursor: pointer;
+	list-style: none;
+	color: #0000ee;
+}
+
+.book-entry > .blurb > details > div
+{
+	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+.book-entry > .blurb > details > div > p
+{
+	line-height: 1.5em;
+	text-align: justify;
+	text-indent: 1em;
+}
+
+.book-entry > .blurb > details > div > p.emphasis-bold
+{
+	font-weight: bold;
+}
+
+.book-entry > .blurb > details > div > p.emphasis-italic
+{
+	font-style: italic;
 }
 
 .book-entry > .links
