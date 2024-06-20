@@ -5,6 +5,16 @@
 	display: block;
 }
 
+.news-entry > .text > p
+{
+	margin-bottom: 0.5em;
+}
+
+.news-entry > .text > p:last-child
+{
+	margin-bottom: 0;
+}
+
 .news-entry > .text img
 {
 	float: right;
