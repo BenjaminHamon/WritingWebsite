@@ -1,20 +1,5 @@
 /* Home */
 
-.news-entry > .text
-{
-	display: block;
-}
-
-.news-entry > .text > p
-{
-	margin-bottom: 0.5em;
-}
-
-.news-entry > .text > p:last-child
-{
-	margin-bottom: 0;
-}
-
 .news-entry > .text img
 {
 	float: right;
@@ -217,11 +202,6 @@
 
 
 /* About */
-
-.about-entry > .text
-{
-	display: block;
-}
 
 .about-entry > .text > img
 {
