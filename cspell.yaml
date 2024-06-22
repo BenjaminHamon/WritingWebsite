@@ -3,11 +3,16 @@
 # cspell:words pycache venv
 
 ignorePaths:
-- ".venv/**"
-- "**/__pycache__/**"
-- "**/*.egg-info/**"
+  - ".venv/**"
+  - "**/__pycache__/**"
+  - "**/*.egg-info/**"
+  - "Artifacts/**"
+  - "Sources/*/build/**"
 
 words:
-- benjaminhamon
-- bhamon
-- hamon
+  - benjaminhamon
+  - bhamon
+  - hamon
+
+enableFiletypes:
+  - jinja-html
