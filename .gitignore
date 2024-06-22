@@ -15,9 +15,9 @@
 *.log
 
 # Python
-*.pyc
 __pycache__/
 *.egg-info/
+*.pyc
 
 # Python virtual environment
 .venv/
