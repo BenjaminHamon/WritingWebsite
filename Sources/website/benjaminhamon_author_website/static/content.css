@@ -1,5 +1,17 @@
 /* Home */
 
+.welcome
+{
+	background-color: #ddeeff;
+	font-style: italic;
+}
+
+.welcome > div.text p
+{
+	text-align: center;
+	text-indent: 0;
+}
+
 .news-entry > .text img
 {
 	float: right;
@@ -60,123 +72,10 @@
 	line-height: 1.25em;
 }
 
-.book-entry > .tags
-{
-	display: flex;
-	flex-direction: column;
-	gap: 0.4em;
-}
-
-.book-entry > .tags > ul
-{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 0.4em;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-.book-entry > .tags > ul > li
-{
-	padding: 0 0.4em;
-	border-radius: 4px;
-}
-
-.book-entry > .tags > ul > li.information
-{
-    background-color: #bbddff;
-}
-
-
-.book-entry > .tags > ul > li.warning
-{
-    background-color: #ffeebb;
-}
-
 .book-entry > .cover img
 {
 	max-width: min(160px, 100%);
 	max-height: min(256px, 100%);
-}
-
-.book-entry > .description
-{
-	background-color: #f0f0f0;
-	padding: 0 0.4em;
-	border-radius: 4px;
-}
-
-.book-entry > .description > details > summary
-{
-	cursor: pointer;
-	list-style: none;
-	color: #0000ee;
-}
-
-.book-entry > .description > details > div
-{
-	margin-top: 1em;
-	display: flex;
-	flex-direction: column;
-	gap: 0.5em;
-}
-
-.book-entry > .description > details > div > p
-{
-	line-height: 1.5em;
-	text-align: justify;
-	text-indent: 1em;
-}
-
-.book-entry > .description > details > div > p.emphasis-bold
-{
-	font-weight: bold;
-}
-
-.book-entry > .description > details > div > p.emphasis-italic
-{
-	font-style: italic;
-}
-
-.book-entry > .blurb
-{
-	background-color: #f0f0f0;
-	padding: 0 0.4em;
-	border-radius: 4px;
-}
-
-.book-entry > .blurb > details > summary
-{
-	cursor: pointer;
-	list-style: none;
-	color: #0000ee;
-}
-
-.book-entry > .blurb > details > div
-{
-	margin-top: 1em;
-	display: flex;
-	flex-direction: column;
-	gap: 0.5em;
-}
-
-.book-entry > .blurb > details > div > p
-{
-	line-height: 1.5em;
-	text-align: justify;
-	text-indent: 1em;
-}
-
-.book-entry > .blurb > details > div > p.emphasis-bold
-{
-	font-weight: bold;
-}
-
-.book-entry > .blurb > details > div > p.emphasis-italic
-{
-	font-style: italic;
 }
 
 .book-entry > .links
@@ -186,7 +85,6 @@
 	justify-content: center;
 	gap: 2em;
 }
-
 
 .book-entry > .links > a
 {
@@ -211,6 +109,7 @@
 	max-width: min(200px, 25%);
 	max-height: 200px;
 }
+
 
 
 /* Contact */
