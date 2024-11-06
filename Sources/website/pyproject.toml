@@ -47,6 +47,7 @@ license-files = [ "../../About.md", "../../License.txt" ]
 benjaminhamon_author_website = [
     "static/**/*.css",
     "static/**/*.jpeg",
-	"static/**/*.png",
+    "static/**/*.pdf",
+    "static/**/*.png",
     "templates/**/*.html",
 ]
